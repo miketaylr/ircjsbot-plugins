@@ -64,7 +64,7 @@ function onDomain(msg, query, index, nick) {
 
 function load(bot) {
 
-  bot.match(/\bd(?:omain)?\s+([^#@]+)(?:\s*#(\d+))?(?:\s*@\s*(\S+))?\s*$/i,
+  bot.match(/^d(?:omain)?\s+([^#@]+)(?:\s*#(\d+))?(?:\s*@\s*(\S+))?\s*$/i,
     shared.forMe, onDomain);
   return irc.STATUS.SUCCESS;
 }
